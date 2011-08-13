@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // Les informations générales relatives à un assembly dépendent de 
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
-[assembly: AssemblyTitle("WindowsFormsApplication1")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("NpcWork")]
+[assembly: AssemblyDescription("Easily edit NPC templates")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("WindowsFormsApplication1")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2011")]
+[assembly: AssemblyCompany("STFU")]
+[assembly: AssemblyProduct("NpcWork")]
+[assembly: AssemblyCopyright("Kapoeira / Cron")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

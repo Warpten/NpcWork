@@ -76,6 +76,11 @@ namespace NpcWork.Database
 
             using (var reader = _command.ExecuteReader())
             {
+                if (!reader.HasRows)
+                {
+                    return;
+                }
+
                 while (reader.Read())
                 {
 

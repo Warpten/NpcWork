@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using MySql.Data;
 using NpcWork.Database;
+using NpcWork.Enums;
 
 namespace NpcWork
 {
@@ -66,8 +67,21 @@ namespace NpcWork
 
         private void DoSeekNPC(object sender, EventArgs e)
         {
-            var _query = String.Format("SELECT * FROM creature_template WHERE entry = {0}", _npcIdToSeek);
+            var _query = String.Format("SELECT * FROM creature_template WHERE entry = {0}", _npcIdToSeek.Text);
+            if (!MySqlConnection.Connected)
+                MySqlConnection.OpenConnexion();
             MySqlConnection.DoSeekNPCUsingQuery(_query);
+            if (MySqlConnection.DidFindNPC())
+            {
+                _didFindNPCStatus.Text = @"NPC Template found !";
+                _didFindNPCStatus.ForeColor = Color.Green;
+                NpcTemplate _npc = MySqlConnection.GetNPCTemplate();
+            }
+            else
+            {
+                _didFindNPCStatus.Text = @"NPC was not found";
+                _didFindNPCStatus.ForeColor = Color.Red;
+            }
         }
     }
 }

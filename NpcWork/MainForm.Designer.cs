@@ -41,6 +41,7 @@
             this.SeekButton = new System.Windows.Forms.Button();
             this._npcIdToSeek = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this._didFindNPCStatus = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -104,6 +105,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this._didFindNPCStatus);
             this.groupBox1.Controls.Add(this.SeekButton);
             this.groupBox1.Controls.Add(this._npcIdToSeek);
             this.groupBox1.Controls.Add(this.label1);
@@ -127,6 +129,11 @@
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
+            // 
+            // _didFindNPCStatus
+            // 
+            resources.ApplyResources(this._didFindNPCStatus, "_didFindNPCStatus");
+            this._didFindNPCStatus.Name = "_didFindNPCStatus";
             // 
             // mainWindow
             // 
@@ -163,6 +170,7 @@
         private System.Windows.Forms.TextBox _npcIdToSeek;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Label _didFindNPCStatus;
     }
 }
 

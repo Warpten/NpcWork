@@ -55,6 +55,7 @@
     <Compile Include="DatabaseSettings.Designer.cs">
       <DependentUpon>DatabaseSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Extensions\Extensions.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +63,7 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MySqlConnect.cs" />
+    <Compile Include="NpcEnums.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DatabaseSettings.resx">

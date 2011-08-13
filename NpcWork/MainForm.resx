@@ -156,19 +156,19 @@
     <value>133, 17</value>
   </metadata>
   <data name="connectToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>119, 22</value>
   </data>
   <data name="connectToolStripMenuItem.Text" xml:space="preserve">
     <value>Settings</value>
   </data>
   <data name="switchConnectionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>119, 22</value>
   </data>
   <data name="switchConnectionToolStripMenuItem.Text" xml:space="preserve">
     <value>Connect</value>
   </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>119, 22</value>
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>Exit</value>
@@ -203,6 +203,30 @@
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="_didFindNPCStatus.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_didFindNPCStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>392, 16</value>
+  </data>
+  <data name="_didFindNPCStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="_didFindNPCStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_didFindNPCStatus.Name" xml:space="preserve">
+    <value>_didFindNPCStatus</value>
+  </data>
+  <data name="&gt;&gt;_didFindNPCStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_didFindNPCStatus.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;_didFindNPCStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="SeekButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>305, 12</value>
   </data>
@@ -225,7 +249,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;SeekButton.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="_npcIdToSeek.Location" type="System.Drawing.Point, System.Drawing">
     <value>58, 16</value>
@@ -246,7 +270,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;_npcIdToSeek.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -273,7 +297,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 4</value>

@@ -38,10 +38,11 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this._didFindNPCStatus = new System.Windows.Forms.Label();
             this.SeekButton = new System.Windows.Forms.Button();
             this._npcIdToSeek = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this._didFindNPCStatus = new System.Windows.Forms.Label();
+            this.rtb = new System.Windows.Forms.RichTextBox();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -98,6 +99,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.rtb);
             this.panel1.Controls.Add(this.groupBox1);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
@@ -112,6 +114,11 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // _didFindNPCStatus
+            // 
+            resources.ApplyResources(this._didFindNPCStatus, "_didFindNPCStatus");
+            this._didFindNPCStatus.Name = "_didFindNPCStatus";
             // 
             // SeekButton
             // 
@@ -130,10 +137,10 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // _didFindNPCStatus
+            // rtb
             // 
-            resources.ApplyResources(this._didFindNPCStatus, "_didFindNPCStatus");
-            this._didFindNPCStatus.Name = "_didFindNPCStatus";
+            resources.ApplyResources(this.rtb, "rtb");
+            this.rtb.Name = "rtb";
             // 
             // mainWindow
             // 
@@ -171,6 +178,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Label _didFindNPCStatus;
+        private System.Windows.Forms.RichTextBox rtb;
     }
 }
 

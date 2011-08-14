@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using MySql.Data;
 using NpcWork.Database;
 using NpcWork.Enums;
+using NpcWork.Extensions;
 
 namespace NpcWork
 {
@@ -68,20 +69,35 @@ namespace NpcWork
         private void DoSeekNPC(object sender, EventArgs e)
         {
             var _query = String.Format("SELECT * FROM creature_template WHERE entry = {0}", _npcIdToSeek.Text);
+
             if (!MySqlConnection.Connected)
                 MySqlConnection.OpenConnexion();
+
             MySqlConnection.DoSeekNPCUsingQuery(_query);
             if (MySqlConnection.DidFindNPC())
             {
                 _didFindNPCStatus.Text = @"NPC Template found !";
                 _didFindNPCStatus.ForeColor = Color.Green;
                 NpcTemplate _npc = MySqlConnection.GetNPCTemplate();
+                DoDisplayNPCInfos(_npc);
             }
             else
             {
                 _didFindNPCStatus.Text = @"NPC was not found";
                 _didFindNPCStatus.ForeColor = Color.Red;
             }
+        }
+
+        private void DoDisplayNPCInfos(NpcTemplate _npc)
+        {
+            rtb.Clear();
+            rtb.SetBold();
+            if (_npc.subname != String.Empty)
+                rtb.AppendFormatLine(@"{0} <{1}>", _npc.name, _npc.subname);
+            else rtb.AppendFormatLine(@"{0}", _npc.name);
+            rtb.SetDefaultStyle();
+            rtb.AppendLine("");
+            rtb.AppendFormatLine(@"Difficulty Entries: #1{0} #2{1} #3{2}", _npc.difficultyEntry1, _npc.difficultyEntry2, _npc.difficultyEntry3);
         }
     }
 }

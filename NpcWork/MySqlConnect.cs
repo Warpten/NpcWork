@@ -76,7 +76,7 @@ namespace NpcWork.Database
             OpenConnexion();
 
             if (!Connected)
-                throw new Exception("Could not connect to database");
+                throw new Exception("Could not connect to the database");
 
             _didFind = false;
             _command = new MySqlCommand(_query, _conn);
